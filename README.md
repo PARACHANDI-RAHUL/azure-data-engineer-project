@@ -1,13 +1,14 @@
 # azure-data-engineer-project
 
 End-to-End Data Engineering Architecture (Azure + Databricks)
-📌 Overview
+
+# 📌 Overview
 
 This repository showcases a conceptual end-to-end data engineering architecture designed to demonstrate how modern data platforms are built using Azure services and Databricks.
 
 The goal of this project is learning and demonstration, focusing on architecture, data flow, and design thinking rather than a fully production-deployed system.
 
-🎯 Purpose of This Project
+# 🎯 Purpose of This Project
 
 To understand how data flows from source systems to analytics
 
@@ -19,7 +20,7 @@ To understand where Delta Live Tables (DLT) fit in a real platform
 
 To demonstrate system-level thinking for interviews and portfolios
 
-🏗️ High-Level Architecture
+# 🏗️ High-Level Architecture
 
 The architecture follows a standard enterprise data engineering pattern:
 
@@ -34,7 +35,7 @@ Scalable and maintainable pipelines
 
 Built-in data quality and governance
 
-🔹 Data Sources
+# 🔹 Data Sources
 
 The platform ingests data from multiple types of sources:
 
@@ -46,7 +47,7 @@ GitHub
 
 Source code, configurations, and version control
 
-🔹 Ingestion Layer
+# 🔹 Ingestion Layer
 
 Azure Data Factory (ADF) is used as the orchestration and ingestion tool.
 
@@ -58,11 +59,11 @@ Schedule and orchestrate pipelines
 
 Load raw data into the Data Lake
 
-🔹 Data Lake (Medallion Architecture)
+# 🔹 Data Lake (Medallion Architecture)
 
 The Data Lake is logically divided into layers:
 
-🟤 Bronze Layer (Raw)
+# 🟤 Bronze Layer (Raw)
 
 Stores raw, unprocessed data
 
@@ -70,7 +71,7 @@ Schema-on-read
 
 Acts as a historical source of truth
 
-⚪ Silver Layer (Cleaned)
+# ⚪ Silver Layer (Cleaned)
 
 Cleaned and standardized data
 
@@ -78,7 +79,7 @@ Deduplication and basic transformations
 
 Business keys applied
 
-🟡 Gold Layer (Curated)
+# 🟡 Gold Layer (Curated)
 
 Aggregated, analytics-ready data
 
@@ -86,7 +87,7 @@ Business logic applied
 
 Optimized for reporting
 
-🔹 Processing Layer
+# 🔹 Processing Layer
 Databricks + Apache Spark
 
 Used for large-scale data processing and transformations.
@@ -101,7 +102,7 @@ Schema enforcement
 
 Performance-optimized transformations
 
-🔹 Delta Live Tables (DLT)
+# 🔹 Delta Live Tables (DLT)
 
 Delta Live Tables are used to build managed, reliable data pipelines.
 
@@ -121,7 +122,8 @@ Batch and streaming pipelines
 
 Medallion architecture
 
-🔹 Data Modeling
+# 🔹 Data Modeling
+
 Star Schema
 
 Used for analytics and reporting:
@@ -138,7 +140,7 @@ BI tool compatibility
 
 Business understanding
 
-🔹 Data Warehouse
+# 🔹 Data Warehouse
 
 The final curated data is loaded into a Data Warehouse for:
 
@@ -148,7 +150,7 @@ Dashboards and reporting
 
 Ad-hoc analytical queries
 
-🔹 Security & Governance
+# 🔹 Security & Governance
 
 Security is considered as a first-class citizen:
 
@@ -160,7 +162,7 @@ Role-based access control (RBAC)
 
 Secure service-to-service authentication
 
-🧠 Key Learnings from This Project
+# 🧠 Key Learnings from This Project
 
 Difference between batch and streaming pipelines
 
@@ -172,7 +174,7 @@ How DLT simplifies pipeline management
 
 Real-world enterprise data architecture patterns
 
-⚠️ Important Note
+# ⚠️ Important Note
 
 This project is:
 
@@ -182,7 +184,7 @@ Not a production deployment
 
 Intended to demonstrate architecture and understanding, not operational maturity
 
-🚀 Future Enhancements
+# 🚀 Future Enhancements
 
 Add sample Spark transformation code
 
@@ -194,12 +196,12 @@ Add CI/CD integration
 
 Include monitoring and alerting examples
 
-👤 Author
+# 👤 Author
 
 Rahul S P
 Aspiring Data Engineer
 
-📎 Final Note
+# 📎 Final Note
 
 This project reflects learning mindset, system design understanding, and data engineering fundamentals. It is meant to grow over time as skills deepen.
 
